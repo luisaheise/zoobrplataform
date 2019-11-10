@@ -1,0 +1,102 @@
+h1{
+text-align: left;
+font-size: 25px;
+list-style: upper-alpha;
+text-transform: Capitalize;
+font-weight: bolder;
+background: #f1f1f1;
+padding: 5;
+font-family: "Raleway", sans-serif;
+}
+.texto{
+    font-size: 27px;
+    font-style: normal;
+}
+input,.voltar{
+    padding: 5px 10px;
+    font-family: "raleway";
+    font-size: 14px;
+    font-style:Normal;
+}
+form{
+    padding: 0 160px;
+}
+body, h2,h3,h4,h5 {
+    background: #c8dccc;
+    font-family: "Raleway", sans-serif;
+}
+
+.form{
+    text-align: center;
+    background: #f1f1f1;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 25;
+    text-align: left;
+    font-style: oblique;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+select {
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 5px;
+    text-transform: Capitalize;
+    border-radius: 5px;
+    padding: 5px;
+    text-align-last: center;
+}
+.voltar{
+    margin-right:17px;
+}
+
+.ave{
+    text-align: center;
+    background: #f1f1f1;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+    padding: 20;
+}
+
+h6{
+    font-size: larger;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.conteudo{
+	width: 960px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.logo{
+    background: url(logo.png) center 0 no-repeat;
+    background-size: 100%;
+    width: 300px;
+    margin: 0 auto;
+    height: 250px;
+}
+
+input[type="submit"], .voltar{
+    border-radius: 5px;
+    padding: 10;
+    background: #f1f1f1;
+    border: #ccc 1px solid;
+    text-decoration: None;
+    color:#000;
+}
+.atributo{
+    width:50%;
+    float:left;
+    height:130px;
+}
+.detalhes{
+    text-align: justify;
+    padding: 0px 100px;
+    margin-top:300px;
+}

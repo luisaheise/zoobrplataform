@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>ZooBR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bghome.jpg");
+  min-height: 100%;
+}
+.logo{
+    background: url(logo.png) 0 0 no-repeat;
+    background-size: 160px;
+    width: 200px !important;
+    margin-left: 50px;
+    height: 100px;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+  transition: 0.5s;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-wide logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="margin-top:40px;">
+      <a href="#about" class="w3-bar-item w3-button">Nossa proposta</a>
+      <a href="#resultados" class="w3-bar-item w3-button">Resultados</a>
+      <a href="#contact" class="w3-bar-item w3-button">Denuncie</a>
+      <a href="https://zoobr.000webhostapp.com/dorso.php" target="_blank" class="w3-bar-item w3-button">Agente ambiental</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#resultados" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:55px;margin-top: 120px;">
+    <span class="w3-jumbo w3-hide-small">O tráfico dos animais silvestres.</span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><b>Conheça os animais mais recorrentes do tráfico.</b></a></p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px 32px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Dados</p>
+      <p> 39 milhões de aves são criadas em domicilios  brasileiros.
+3 milhões de pássaros vivem em cativeiros onde apenas 400 mil são criadores amadores legalizados
+</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Missão</p>
+      <p>Nossa missão e dar suporte  e atendimento em três pilares sociais</br>✓ Agentes Ambientais, na formação e conhecimento das aves</br>✓ Instituições de fins não lucrativos no combate ao trafico</br>✓ Aos educadores de escolas públicas e particulares na formação e conscientização dos jovens e adultos </br>
+</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Parceiros</p>
+      <p><a target="_blank" href="https://www.ibama.gov.br/ouvidoria#linha-verde">IBAMA</a></p>
+      <p><a target="_blank" href="https://portal.prf.gov.br/canais-de-atendimento/ouvidoria">PRF</a></p>
+      <p><a target="_blank" href="http://www.freeland.org.br">Freeland</a></p>
+      <p><a target="_blank" href="http://www.freeland.org.br">Freeland</a></p>
+      <p>Sociedade civil</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:80px 16px 80px 16px" id="contact">
+  <h3 class="w3-center">Denuncie!</h3>
+  <div style="margin:48px auto; width: 80%;">
+    <p style="width:40%; margin: 0 auto; float:left;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> IBAMA - Linha Verde  0800 61 8080 <br/>
+    <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>    
+        PRF Ouvidoria - (61) 2025-6607<br/>
+    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>    
+        Freeland - freelandbrasil@freelandbrasil.org.br <br/>
+    <br>
+    <form action="/action_page.php" target="_blank" style="width:40%; margin: 0 10%; float:left;">
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit" style="float:right;">
+          <i class="fa fa-paper-plane"></i> Nos envie sua denuncia.
+        </button>
+      </p>
+    </form>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64" style="float:left">
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function() {
+function filterPath(string) {
+return string
+.replace(/^\//,'')
+.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+.replace(/\/$/,'');
+}
+$('a[href*=#]').each(function() {
+if ( filterPath(location.pathname) == filterPath(this.pathname)
+&& location.hostname == this.hostname
+&& this.hash.replace(/#/,'') ) {
+var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+if ($target) {
+var targetOffset = $target.offset().top - 100;
+$(this).click(function() {
+$('html, body').animate({scrollTop: targetOffset}, 600);
+return false;
+});
+}
+}
+});
+});
+// ]]></script>
+
+</body>
+</html>
